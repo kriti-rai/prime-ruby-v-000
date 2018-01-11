@@ -6,7 +6,6 @@ def prime?(num)
 	array.each do |i|
 		if num % i == 0
 			return false
-
 		else
 			return true
 		end
