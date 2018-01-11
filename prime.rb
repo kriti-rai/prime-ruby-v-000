@@ -3,8 +3,10 @@ def prime?(num)
 	return true if num==2
   return false if num<=1
 	array.each do |i|
-		if num % i == 0
-			return false
+		if num % i != 0
+			return true
+    else
+      return false
 		end
 	end
 end
