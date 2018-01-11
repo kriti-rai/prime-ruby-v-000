@@ -7,11 +7,11 @@ def prime?(num)
 	elsif array.each do |i|
     new_array = []
 		new_array<<(num % i == 0)
-		end
 		if new_array.include?(true)
 			return false
 		else
 		  return true
 		end
+    end
 	end
 end
