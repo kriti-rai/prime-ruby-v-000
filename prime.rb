@@ -1,12 +1,18 @@
 def prime?(num)
-	array = (2..num-1).to_a
-	return true if num==2
-  return false if num<=1
-	array.each do |i|
-		if num % i != 0
-			return true
-    else
-      return false
+	new_array = []
+	array = (2..num-1).to_a 
+	if num==2
+		return true
+	elsif num<2
+		return false
+	elsif array.each do |i|
+		new_array<<(num % i == 0)
+		end
+		if new_array.include?(true) 
+			return false
+		else
+		return true
 		end
 	end
+
 end
